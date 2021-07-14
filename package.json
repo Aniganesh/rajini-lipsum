@@ -10,14 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:rajini-lipsum.helloWorld"
+        "onCommand:rajini-lipsum.test",
+		"onCommand:rajini-lipsum.words"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "rajini-lipsum.helloWorld",
-				"title": "Hello World"
+				"command": "rajini-lipsum.test",
+				"title": "Test rajini lipsum"
+			},
+			{
+				"command": "rajini-lipsum.words",
+				"title": "Rajini lipsum words"
 			}
 		]
 	},
