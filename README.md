@@ -22,6 +22,7 @@ The extension provides two commands.
 ## Known Issues
 
 It could potentially crash your VSCode instance for extremely large numbers. This has not been tested or reported.
+For raising issues go to the project's [github page](https://github.com/aniganesh/rajini-lipsum)
 
 ## Release Notes
 
