@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Thalaiva!');
 	});
-	let words = vscode.commands.registerCommand('rajini-lipsum.lines', async () => {
+	let lines = vscode.commands.registerCommand('rajini-lipsum.lines', async () => {
 		const activeEditor = vscode.window.activeTextEditor;
 		if (!activeEditor) { return; }
 		const numLines = await getInput();
@@ -30,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
 		});
 	});
 	context.subscriptions.push(test);
-	context.subscriptions.push(words);
+	context.subscriptions.push(lines);
 }
 
 // this method is called when your extension is deactivated
