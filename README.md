@@ -4,7 +4,7 @@ The extension  provides dummy text that is a fun replacement to Lorem ipsum. Ins
 
 ## Features
 
-In the current version (0.0.1), this inserts the required number of lines wherever the cursor is currently placed.
+In the current version, this inserts the required number of lines wherever the cursor is currently placed.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ The extension provides two commands.
 
 ## Known Issues
 
-It could potentially crash your VSCode instance for extremely large numbers. This has not been tested or reported.
+It could potentially slow down your VSCode instance for extremely large numbers(>1, 00, 000).
 For raising issues go to the project's [github page](https://github.com/aniganesh/rajini-lipsum)
 
 ## Release Notes
