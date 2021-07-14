@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import getLines from './getLines';
 import { getInput } from './Helpers/getInput';
 
 // this method is called when your extension is activated
@@ -19,13 +20,13 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Thalaiva!');
 	});
-	let words = vscode.commands.registerCommand('rajini-lipsum.words', async () => {
+	let words = vscode.commands.registerCommand('rajini-lipsum.lines', async () => {
 		const activeEditor = vscode.window.activeTextEditor;
 		if (!activeEditor) { return; }
-		// const numWords = await getInput();
+		const numLines = await getInput();
 		activeEditor.edit((editBuilder) => {
-			const pos = new vscode.Position(0, 1);
-			editBuilder.insert(pos, 'Thalaiva!');
+			const pos = activeEditor.selection.active;
+			editBuilder.insert(pos, getLines(Number.parseInt(numLines || ''), 'punch'));
 		});
 	});
 	context.subscriptions.push(test);
