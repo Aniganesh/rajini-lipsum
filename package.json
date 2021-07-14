@@ -1,5 +1,5 @@
 {
-  "name": "rajini-lipsum",
+	"name": "rajini-lipsum",
 	"displayName": "Rajini Lipsum",
 	"description": "Lorem ipsum but it's Rajini's lines!",
 	"version": "0.0.1",
@@ -10,8 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:rajini-lipsum.test",
-		"onCommand:rajini-lipsum.words"
+		"onCommand:rajini-lipsum.test",
+		"onCommand:rajini-lipsum.lines"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -21,8 +21,8 @@
 				"title": "Test rajini lipsum"
 			},
 			{
-				"command": "rajini-lipsum.words",
-				"title": "Rajini lipsum words"
+				"command": "rajini-lipsum.lines",
+				"title": "Rajini lipsum lines"
 			}
 		]
 	},
