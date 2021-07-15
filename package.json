@@ -7,7 +7,7 @@
 		"vscode": "^1.58.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets"
 	],
 	"activationEvents": [
 		"onCommand:rajini-lipsum.test",
@@ -23,6 +23,14 @@
 			{
 				"command": "rajini-lipsum.lines",
 				"title": "Rajini lipsum lines"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "rajini-lipsum.lines",
+				"key": "ctrl+r ctrl+l",
+				"mac": "cmd+r cmd+l",
+				"when": "editorTextFocus"
 			}
 		]
 	},
@@ -48,5 +56,8 @@
 		"vscode-test": "^1.5.2"
 	},
 	"publisher": "aniruddha",
-	"repository": "https://github.com/Aniganesh/rajini-lipsum"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Aniganesh/rajini-lipsum"
+	}
 }

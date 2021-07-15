@@ -32,3 +32,7 @@ Users appreciate release notes as you update your extension.
 
 Initial release of Rajini lipsum
 You can insert a number of Rajini's iconic punch lines from various movies in your text.
+
+### 0.0.4
+
+Add default keybindings for Rajini lipsum. To get lines added to your editor, press `ctrl+r` ( `cmd+r` ) followed by `ctrl+l` ( `cmd+l` ). The complicated keybinding is chosen in the hope that it won't interfere with your existing keybindings. 0.0.2 and 0.0.3 only contained minor changes with the code.
