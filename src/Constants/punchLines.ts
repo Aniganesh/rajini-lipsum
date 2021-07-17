@@ -43,7 +43,7 @@ const rajiniPunchLines: Array<string> = [
 	'Kashta padama edhume kedaikaadhu. Kashta padama kedaikradhu ennikume nilaikaadhu',
 	'Koodave porandhadhu. Ennikum pogadhu',
 	'Poda! Aandavane namma pakkam irukan',
-	'Yaamirukka bayamen! Saravanan irukka bayamen?',
+	'Yaamirukka bayamen! Sharavanan irukka bayamen?',
 	'I\'ll set your screens on fire',
 	'Enna paakra? Original ah ve naan villain ma',
 	'Indha vettaikaran kitta endha puliyum paayavum mudiyadhu, padhungavum mudiyadhu',
@@ -59,7 +59,21 @@ const rajiniPunchLines: Array<string> = [
 	'Ketta payan sir avan',
 	'Naan veezhven endru ninaithaayo?',
 	'Indha number 1, number 2 ellam paapa vezhayaatu. I\'m the only one. "Super  one"',
-	''
+	'Chumma Kizhi',
+	'Indha vettaiyana yaralayum azhikka mudiyadhu. Azhikka nenacha azhichuduvan',
+	'Naan solradhayum seiven, solladhadhayum seiven',
+	// 'Yaaruku nalla thagappan thaai, nalla manaivi, nalla kuzhandhaigal, nalla nanbargal irukaangalo, avan dhan unmainyana panakkaaran'
+	'Katham katham, Mudindhadhu mudinju pochu',
+	'Maghizhchi',
+	'Rendu kaiyum rendu kaalum pona kooda pozhachukuvan sir. Ketta paiyan sir avan',
+	'Naan polladhavanukku polladhavan da',
+	'Puli, paayum puli',
+	'Avasara adi ranga',
+	'Indha maanikkathuku munnadi nee oru kozhandha da',
+	'Naan solradha seiyven. Seiradha dhan solluven',
+	'Idhu Suriya sir. Orasadheenga',
+	'Indha Pandiyan eppovum, engayum,  edhulayum; right',
+	'Paarthaaya? Engal naatin radha, gaja, thuraga padhaadhigalai?', // Translation: Had a taste of our men in chariots (radha), elephants (gaja) and on foot?
 ];
 
 export default rajiniPunchLines;
