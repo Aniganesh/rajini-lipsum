@@ -1,15 +1,20 @@
+import { LineTypes } from "./@types";
+import rajiniFunnyLines from "./Constants/funnyLines";
 import rajiniPunchLines from "./Constants/punchLines";
 const lines = {
-	punch: rajiniPunchLines,
-	funny: []
+	[LineTypes.punch]: rajiniPunchLines,
+	[LineTypes.funny]: rajiniFunnyLines
 };
 
 
-const getLines = (numLines?: number, type?: 'punch' /* | 'funny' */) => {
+const getLines = (numLines?: number, type?: LineTypes) => {
 	if (!numLines || typeof numLines !== 'number') {
 		numLines = 1;
 	}
-	if (!type) { type = 'punch'; }
+	if (!type) { type = LineTypes.punch; }
+	if(type !== LineTypes.punch && type !== LineTypes.funny){
+		throw Error('Requested type of line not found');
+	}
 	const start = Math.floor(Math.random() * rajiniPunchLines.length);
 	let resLines = lines[type].slice(start, start + numLines);
 	while (resLines.length < numLines) {
