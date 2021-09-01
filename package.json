@@ -18,10 +18,12 @@
 		"commands": [
 			{
 				"command": "rajini-lipsum.test",
+				"category": "Rajini Lipsum",
 				"title": "Test rajini lipsum"
 			},
 			{
 				"command": "rajini-lipsum.lines",
+				"category": "Rajini Lipsum",
 				"title": "Rajini lipsum lines"
 			}
 		],
@@ -32,7 +34,28 @@
 				"mac": "cmd+r cmd+l",
 				"when": "editorTextFocus"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Rajini lipsum",
+			"properties": {
+				"rajiniLipsum.rajiniLines.type": {
+					"type": "string",
+					"enum": [
+						"random",
+						"punch",
+						"funny"
+					],
+					"enumDescriptions": [
+						"Gives a mix of lines from both funny and punch lines set of lines available.",
+						"Gives only punch lines from the available set of punch lines",
+						"Gives only funny lines from the available set of funny lines"
+					],
+					"markdownDescription": "Specify which type of Rajini's lines you want. Values can be: '**random**','**punch**' or '**funny**'",
+					"default": "punch",
+					"scope": "application"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
