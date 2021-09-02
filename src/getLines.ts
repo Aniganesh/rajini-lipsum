@@ -12,13 +12,13 @@ const getLines = (numLines?: number, type?: LineTypes) => {
 		numLines = 1;
 	}
 	if (!type) { type = LineTypes.punch; }
-	if(type !== LineTypes.punch && type !== LineTypes.funny){
+	if(type !== LineTypes.punch && type !== LineTypes.funny || !lines[type]?.length){
 		throw Error('Requested type of line not found');
 	}
 	const start = Math.floor(Math.random() * rajiniPunchLines.length);
-	let resLines = lines[type].slice(start, start + numLines);
+	let resLines = lines[type].slice(start, start + numLines).sort(()=> Math.random() - 0.5); // Get a set of lines and randomize.
 	while (resLines.length < numLines) {
-		resLines = resLines.concat(lines[type].slice(0));
+		resLines = resLines.concat(lines[type].slice(0)); // Not randomizing since this could slow down the extension on large numbers.
 	}
 	return resLines.join('\n');
 };
