@@ -28,9 +28,9 @@
 				"title": "Rajini lipsum lines"
 			},
 			{
-				"command": "rajini-lipsum.settings",
+				"command": "rajini-lipsum.autoAddLines",
 				"category": "Rajini Lipsum",
-				"title": "View & edit settings"
+				"title": "Auto add Lines"
 			}
 		],
 		"keybindings": [
@@ -38,6 +38,12 @@
 				"command": "rajini-lipsum.lines",
 				"key": "ctrl+r ctrl+l",
 				"mac": "cmd+r cmd+l",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "rajini-lipsum.autoAddLines",
+				"key": "alt+r alt+l",
+				"mac": "opt+r opt+l",
 				"when": "editorTextFocus"
 			}
 		],
@@ -59,6 +65,12 @@
 					"markdownDescription": "Specify which type of Rajini's lines you want. Values can be: '**random**','**punch**' or '**funny**'",
 					"default": "punch",
 					"scope": "application"
+				},
+				"rajiniLipsum.rajiniLines.autoAddCount": {
+					"type": "number",
+					"default": 10,
+					"scope": "application",
+					"markdownDescription": "Specify how many lines to auto add on pressing alt+r alt+l"
 				}
 			}
 		}
